@@ -1,9 +1,5 @@
-/* @import url('https://rsms.me/inter/inter.css'); */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 html { font-family: 'Inter', sans-serif; }
-/* @supports (font-variation-settings: normal) {
-    html { font-family: 'Inter var', sans-serif; }
-} */
 
 :root {
     --primary-color: #009FFF; 
@@ -40,7 +36,6 @@ header {
 } 
 
 #header-logo-a {
-    /* padding: 10px; */
     font-weight: 600;
     font-size: 34px;
     color: var(--tertiary-color);
@@ -83,12 +78,14 @@ a {
     color: var(--tertiary-color);
 }
 
-#hero-1 > h1 {
+#hero-h1-1 {
     font-size: 60px;
     font-weight: 600;
 }
 
 #hero-h1-2 {
+    font-size: 60px;
+    font-weight: 600;
     padding-top: 10px;
 }
 
@@ -184,21 +181,6 @@ hr {
     width: min(900px, 80%);
 }
 
-/* .header-table {
-    width: 30%;
-    font-size: 25px;
-}
-
-.table-our {
-    margin-top: 20px;
-}
-
-.table-data {
-    color: var(--secondary-color);
-    padding-top: 15px;
-    font-size: 25px;
-} */
-
 .column {
     display: flex;
     flex-direction: column;
@@ -245,7 +227,7 @@ hr {
 }
 
 #contact form {
-    width: min(50%, 500px);
+    width: min(80%, 500px);
 }
 
 #contact input {
@@ -279,43 +261,10 @@ input:focus {
 
 footer {
     background: rgb(0,159,255);
-    background: linear-gradient(0deg, rgba(0,159,255,1) 0%, rgba(0,121,255,1) 100%);    color: white;
+    background: linear-gradient(0deg, rgba(0,159,255,1) 0%, rgba(0,121,255,1) 100%);    
+    color: white;
     box-sizing: border-box;
-    /* padding: 90px 120px; */
 }
-
-/* #big-footer {
-    width: 22%;
-    vertical-align: top;
-}
-
-#big-footer > h2 {
-    font-size: 35px;
-    padding-bottom: 25px;
-    font-weight:500;
-}
-
-#big-footer > p {
-    font-size: 20px;
-    font-weight: 300;
-}
-
-#small-footer {
-    width: 20%;
-    padding-bottom: 20px;
-}
-
-#small-footer > h3 {
-    font-size: 25px;
-    font-weight: 500;
-    padding-bottom: 10px;
-}
-
-#small-footer > p {
-    padding-bottom: 10px;
-    font-size: 15px;
-    font-weight: 300;
-} */
 
 #footer-container {
     padding: 120px 120px 80px 120px;
@@ -388,20 +337,67 @@ footer {
     justify-content: center;
 }
 
-@media screen and (max-width: 950px) {
+/* @media screen and (max-width: 950px) { */
     /* #footer-logo-svg {
         padding: 0;
     } */
 
+/* 
+} */
+
+@media screen and (max-width: 800px) {
+    .title-2 {
+        font-size: 30px;
+    }
+/* 
+    .hero-1 h1 {
+        color: red;
+        font-size: 60px;
+    } */
+     /* {
+        font-size: 50px;
+    } */
+
+    #hero-h1-2, #hero-h1-1 {
+        font-size: 50px;
+    }
+
     #footer-logo {
         width: 100vw;
+        padding: 20px;
     }
 
     #copyright > p { 
         width: 100vw;
+        padding: 10px 0px 20px 0px;
     }
 
     #header-a {
         display: none;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .footer-big, .footer-small {
+        width: 100%;
+    }
+
+    #footer-container {
+        padding: 80px 80px 40px 80px;
+    }
+
+    #our-contact-details {
+        font-size: 22px;
+    }
+
+    #lets-connect {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #footer-container {
+        padding: 80px 40px 20px 40px;
     }
 }
