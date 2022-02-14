@@ -363,6 +363,7 @@ footer {
 
     #hero-box {
         padding: 30px 50px 80px 50px;
+        margin-bottom: 350px;
     }
 }
 
@@ -383,6 +384,10 @@ footer {
         font-size: 20px;
     }
 
+    #hero-box {
+        margin-bottom: 300px;
+    }
+
     #hero-box-p {
         font-size: 26px;
     }
@@ -394,6 +399,12 @@ footer {
     #contact p {
         width: 500px;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #hero-box {
+        margin-bottom: 250px;
     }
 }
 
@@ -413,6 +424,10 @@ footer {
 
     #hero-box-p {
         font-size: 24px;
+    }
+
+    #hero-box {
+        margin-bottom: 250px;
     }
 }
 
@@ -451,6 +466,7 @@ footer {
 
     #hero-box {
         padding: 30px 30px 80px 30px;
+        margin-bottom: 450px;
     }
 
     #hero-box-img {
@@ -500,11 +516,19 @@ footer {
     .title-2-container {
         padding: 0px 40px 40px 40px;
     }
+
+    #hero-box {
+        margin-bottom: 300px;
+    }
 }
 
 @media screen and (max-width: 380px) {
     #hero-box-img-2 {
         top: 700px;
+    }
+
+    #hero-box {
+        margin-bottom: 300px;
     }
 }
 
@@ -532,5 +556,9 @@ footer {
 
     .p-text {
         font-size: 15px;
+    }
+
+    #hero-box {
+        margin-bottom: 250px;
     }
 }
